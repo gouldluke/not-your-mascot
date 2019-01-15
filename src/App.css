@@ -37,7 +37,16 @@
 }
 
 * {
-    box-sizing: border-box;;
+    box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  font-size: 26px;
+  color: white;
+  background: darksalmon;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .myths {
@@ -58,4 +67,45 @@
     font-size: 16px;
     padding: 8px;
     margin: 0 10px 30px 10px;
+}
+
+.hook {
+    font-size: 26px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hook h2 {
+    font-weight: 300;
+}
+
+.hook h3 {
+    text-align: right;
+    font-style: italic;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.hook button {
+    margin-left: 186px;
+}
+
+.more-info {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+}
+
+.more-info .quote {
+  font-weight: 300;
+}
+
+.more-info .attributed-party {
+  text-align: right;
+}
+
+.more-info .quote-follow-up {
+  font-size: 18px;
 }

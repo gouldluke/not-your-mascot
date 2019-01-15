@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
-import Myth from './Myth';
+import Hook from './Hook';
+import MoreInfo from './MoreInfo';
 import {initialMyths} from '../myths';
 import {additionalMyths} from '../myths';
 
@@ -12,17 +13,8 @@ class App extends Component {
         return (
           <div className="App">
             <Header text={headerText} />
-            <p className="App-intro">any of the following statements?</p>
-            <div className="myths">
-                {
-                    Object
-                        .keys(this.state.myths)
-                        .map(key => <Myth key={key} meta={this.state.myths[key]} />)
-                }
-            </div>
-            <div className="add-myths">
-                <button onClick={this.loadAdditionalMyths}> Load more...</button>
-            </div>
+            <Hook />
+            <MoreInfo />
           </div>
         );
     }
